@@ -1,8 +1,9 @@
 import requests
+import os
 
 class Data():
     def __init__(self,symbol, num):
-        marketstack_access_key = ACCESS_KEY
+        marketstack_access_key = os.environ['ACCESS_KEY']
         self.symbol = symbol
         self.num = num
         self.parameter = {
