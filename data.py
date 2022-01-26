@@ -2,7 +2,7 @@ import requests
 
 class Data():
     def __init__(self,symbol, num):
-        marketstack_access_key = 'cb8e140d21e76bdc2949daa2fcc836c8'
+        marketstack_access_key = ACCESS_KEY
         self.symbol = symbol
         self.num = num
         self.parameter = {
